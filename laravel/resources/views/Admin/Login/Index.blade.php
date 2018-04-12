@@ -18,7 +18,7 @@
 
 <link rel="stylesheet" type="text/css" href="/Admin/css/mws-theme.css" media="screen">
 
-<title>MWS Admin - Login Page</title>
+<title>{{$title}}</title>
 
 </head>
 
@@ -30,10 +30,11 @@
             <span><a href="#">店铺商家登录</a></span>
             <div class="mws-login-lock"><i class="icon-lock"></i></div>
             <div id="mws-login-form">
-                <form class="mws-form" action="dashboard.html" method="post">
+                <form class="mws-form" action="/Admin/Login/getLogin" method="post">
+                    {{csrf_field()}}
                     <div class="mws-form-row">
                         <div class="mws-form-item">
-                            <input type="text" name="username" class="mws-login-username required" placeholder="username">
+                            <input type="text" name="user_name" class="mws-login-username required" placeholder="username">
                         </div>
                     </div>
                     <div class="mws-form-row">
@@ -41,16 +42,8 @@
                             <input type="password" name="password" class="mws-login-password required" placeholder="password">
                         </div>
                     </div>
-                    <div id="mws-login-remember" class="mws-form-row mws-inset">
-                        <ul class="mws-form-list inline">
-                            <li>
-                                <input id="remember" type="checkbox"> 
-                                <label for="remember">Remember me</label>
-                            </li>
-                        </ul>
-                    </div>
                     <div class="mws-form-row">
-                        <input type="submit" value="Login" class="btn btn-success mws-login-button">
+                        <input type="submit" value="登录" class="btn btn-success mws-login-button">
                     </div>
                 </form>
             </div>

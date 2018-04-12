@@ -111,17 +111,30 @@
             <div id="mws-navigation">
                 <ul>
                     <li>
+                        <a href="/Admin/Index/Index"><i class="icon-user"></i> 后台首页</a>
+                    </li>
+
+                    <li>
                         <a href="#"><i class="icon-user"></i> 用户管理</a>
                         <ul>
                             <li><a href="/admin/user">用户列表</a></li>
                             <li><a href="/admin/user/create">用户添加</a></li>
                         </ul>
                     </li>
+
                     <li>
                         <a href="#"><i class="icon-user"></i> 分类管理</a>
                         <ul>
                             <li><a href="/admin/sort">分类列表</a></li>
                             <li><a href="/admin/sort/create">分类添加</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="icon-user"></i> 轮播管理</a>
+                        <ul>
+                            <li><a href="/Admin/Figure">轮播列表</a></li>
+                            <li><a href="/Admin/Figure/create">轮播添加</a></li>
                         </ul>
                     </li>
                    
@@ -202,7 +215,7 @@
     <script src="/Admin/js/core/themer.js"></script>
 
     <!-- Demo Scripts (remove if not needed) -->
-    <script src="/Admin/js/demo/demo.table.js"></script>
+    <!-- <script src="/Admin/js/demo/demo.table.js"></script> -->
 
 </body>
 </html>
